@@ -118,4 +118,5 @@ class HistoryList(generic.ListView):
     context_object_name = 'lst'
 
 def logout_profile(request):
+    logout(request)
     return render(request, 'polls/logout.html')
